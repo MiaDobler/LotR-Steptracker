@@ -29,15 +29,15 @@ export default function TabTwoScreen() {
           setModalVisible(!modalVisible);
         }}>
         <View style={styles.centeredView}>
-          <View style={styles.modalView}>
-            <Text style={styles.modalText}> <Text style={{fontWeight: "bold"}}>Rivendell</Text> (Sindarin: Imladris) 
+          <View style={styles.modalView} >
+            <Text style={styles.modalText}> <Text style={{fontWeight: "bold", color: 'rgba(2, 25 , 34)'}}>Rivendell</Text> (Sindarin: Imladris) 
             {"\n"} The Last Homely House East of the Sea
             {"\n\n"} Founded by the Elf-Lord Elrond as a stronghold during the war of the Elves and Sauron during the second age.
             {"\n\n"} Rivendell serves as an important location during the Lord of the Rings: 
             here, Frodo is healed after getting stabbed by the Nazgûl, and the council meets to establish the Fellowship.
             {"\n\n"} The Fellowship sets out from Rivendell on December 25, T.A. 3018.
             
-            {"\n\n"} You have walked <Text style={{fontWeight: "bold"}}>737 km</Text>.
+            {"\n\n"} You have walked <Text style={{fontWeight: "bold", color: 'rgba(2, 25 , 34)'}}>737 km</Text>.
             </Text>
             <Pressable
               style={[styles.button, styles.buttonClose]}
@@ -143,5 +143,6 @@ const styles = StyleSheet.create({
   modalText: {
     marginBottom: 15,
     textAlign: 'center',
+    color: 'rgba(2, 25 , 34)'
   },
 });
